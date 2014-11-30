@@ -1,0 +1,54 @@
+<com.jeff.qq.ui.DragLayou xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" 
+    android:id="@+id/dl">
+
+    <RelativeLayout
+        android:layout_width="230dip"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp" >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/head" />
+
+        <ListView
+            android:id="@+id/lv_menu_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/iv_head" 
+            >
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000ff" >
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:src="@drawable/head" />
+        </RelativeLayout>
+        
+        <ListView 
+            android:id="@+id/lv_content"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:background="#ffffff"></ListView>
+    </LinearLayout>
+
+</com.jeff.qq.ui.DragLayou>
